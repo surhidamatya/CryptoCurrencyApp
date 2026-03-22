@@ -1,0 +1,38 @@
+name: crypto_tracker_flutter
+description: Real-time cryptocurrency tracker with live Binance price streaming.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Networking
+  dio: ^5.4.3+1
+  web_socket_channel: ^3.0.1
+
+  # Charts
+  fl_chart: ^0.68.0
+
+  # Image caching
+  cached_network_image: ^3.3.1
+
+  # UI
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
