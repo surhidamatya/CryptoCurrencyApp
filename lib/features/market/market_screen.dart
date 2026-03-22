@@ -20,6 +20,7 @@ class MarketScreen extends ConsumerWidget {
             backgroundColor: const Color(0xFF0D0D0D),
             floating: true,
             pinned: true,
+            toolbarHeight: kToolbarHeight + MediaQuery.of(context).viewPadding.top,
             title: const Text(
               'Market',
               style: TextStyle(

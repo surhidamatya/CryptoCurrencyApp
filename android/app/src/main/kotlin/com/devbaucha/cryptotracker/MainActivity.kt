@@ -1,4 +1,4 @@
-package com.cryptotracker.crypto_tracker_flutter
+package com.devbaucha.cryptotracker
 
 import io.flutter.embedding.android.FlutterActivity
 
