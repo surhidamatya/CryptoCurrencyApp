@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../detail/crypto_detail_screen.dart';
 import '../favorites/favorites_provider.dart';
+import '../favorites/favorites_screen.dart';
 import 'market_provider.dart';
 import 'market_row.dart';
 
@@ -37,7 +38,12 @@ class MarketScreen extends ConsumerWidget {
                   children: [
                     IconButton(
                       icon: const Icon(Icons.star_rounded, color: Colors.amber),
-                      onPressed: () {},
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const FavoritesScreen(),
+                        ),
+                      ),
                     ),
                     if (favCount > 0)
                       Positioned(
